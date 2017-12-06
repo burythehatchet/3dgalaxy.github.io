@@ -30,10 +30,10 @@
             width: 90%;
         }
         
-        h3 {
+        h3.service {
             margin-top: 5px;
-            margin-left: -40px;
             color: black;
+            margin-left: 3%;
         }
         
         img.academy {
@@ -46,6 +46,10 @@
             padding-bottom: 1%;
             margin-top: 15px;
             margin-bottom: 15px;
+        }
+        
+        .carouselimage {
+            width: 100%;
         }
     </style>
 </head>
@@ -114,11 +118,9 @@
                         <div class="card-header" style="background-color: white">
                             <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                 <div class="row">
-                                    <div class="col-sm-1 d-flex align-items-center">
-                                        <img src="img/glyphicons-320-sort.png">
-                                    </div>
-                                    <div class="col-sm-11 d-flex align-items-center">
-                                        <h3>3D-печать</h3>
+                                    <div class="col-sm-12 d-flex align-items-center">
+                                        <img class="service" src="img/glyphicons-320-sort.png">
+                                        <h3 class="service">3D-печать</h3>
                                     </div>
                                 </div>
                             </a>
@@ -134,11 +136,9 @@
                         <div class="card-header" style="background-color: white">
                             <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                 <div class="row">
-                                    <div class="col-sm-1 d-flex align-items-center">
+                                    <div class="col-sm-12 d-flex align-items-center">
                                         <img src="img/glyphicons-161-imac.png">
-                                    </div>
-                                    <div class="col-sm-11 d-flex align-items-center">
-                                        <h3>Разработка 3D-моделей</h3>
+                                        <h3 class="service">Разработка 3D-моделей</h3>
                                     </div>
                                 </div>
                             </a>
@@ -154,11 +154,9 @@
                         <div class="card-header" style="background-color: white">
                             <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                                 <div class="row">
-                                    <div class="col-sm-1 d-flex align-items-center">
+                                    <div class="col-sm-12 d-flex align-items-center">
                                         <img src="img/glyphicons-137-cogwheel.png">
-                                    </div>
-                                    <div class="col-sm-11 d-flex align-items-center">
-                                        <h3>Ремонт и настройка техники</h3>
+                                        <h3 class="service">Ремонт и настройка техники</h3>
                                     </div>
                                 </div>
                             </a>
@@ -173,11 +171,9 @@
                         <div class="card-header" style="background-color: white">
                             <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
                                 <div class="row">
-                                    <div class="col-sm-1 d-flex align-items-center">
+                                    <div class="col-sm-12 d-flex align-items-center">
                                         <img src="img/glyphicons-375-claw-hammer.png">
-                                    </div>
-                                    <div class="col-sm-11 d-flex align-items-center">
-                                        <h3>Изготовление прототипов при помощи других технологий</h3>
+                                        <h3 class="service">Изготовление прототипов при помощи других технологий</h3>
                                     </div>
                                 </div>
                             </a>
@@ -193,11 +189,9 @@
                         <div class="card-header" style="background-color: white">
                             <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
                                 <div class="row">
-                                    <div class="col-sm-1 d-flex align-items-center">
+                                    <div class="col-sm-12 d-flex align-items-center">
                                         <img src="img/glyphicons-82-refresh.png">
-                                    </div>
-                                    <div class="col-sm-11 d-flex align-items-center">
-                                        <h3>Обмен старых катушек</h3>
+                                        <h3 class="service">Обмен старых катушек</h3>
                                     </div>
                                 </div>
                             </a>
@@ -229,19 +223,19 @@
                         <!-- The slideshow -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/gallery1.jpg" width="1100" height="650">
+                                <img src="img/gallery1.jpg" class="carouselimage">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/gallery2.jpg" width="1100" height="650">
+                                <img src="img/gallery2.jpg" class="carouselimage">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/gallery3.jpg" width="1100" height="650">
+                                <img src="img/gallery3.jpg" class="carouselimage">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/gallery4.jpg" width="1100" height="650">
+                                <img src="img/gallery4.jpg" class="carouselimage">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/gallery5.jpg" width="1100" height="650">
+                                <img src="img/gallery5.jpg" class="carouselimage">
                             </div>
                         </div>
                         <!-- Left and right controls -->
@@ -306,17 +300,17 @@
                     <h1 style="color: white">Как добраться</h1>
                 </div>
                 <div class="card-body" style="padding: 0">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A487c514bdb4ce95890c857242df7b6a44fc8fe24197664dc0027d50614e0e389&amp;width=100%25&amp;height=637&amp;lang=ru_RU&amp;scroll=true"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A487c514bdb4ce95890c857242df7b6a44fc8fe24197664dc0027d50614e0e389&amp;width=100%25&amp;height=50vh&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <div class="card-footer">
                     <div class="row">
-                        <div class="col-sm-4 d-flex align-items-center" style="margin-top: 13px">
+                        <div class="col-sm-4 d-flex align-items-center" style="margin-top: 1.5%; margin-bottom: 1%">
                             <p id="address">ул. Марксистская, 34к7, Москва, МИРБИС</p>
                         </div>
-                        <div class="col-sm-4 d-flex align-items-center">
+                        <div class="col-sm-4 d-flex align-items-center" style="margin-top: 1%; margin-bottom: 1%">
                             <a href="#" class="btn btn-outline-dark btn-block">Скопировать адрес</a>
                         </div>
-                        <div class="col-sm-4 d-flex align-items-center">
+                        <div class="col-sm-4 d-flex align-items-center" style="margin-top: 1%; margin-bottom: 1%">
                             <a href="#" class="btn btn-outline-dark btn-block">Скопировать координаты</a>
                         </div>
                         <div class="container">
