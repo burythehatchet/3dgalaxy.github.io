@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
@@ -324,10 +325,10 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <h4>Телефон:</h4>
-                            <p><a href="#">+7(910)446-34-85</a></p>
+                            <p><a href="tel:79104463485">+7(910)446-34-85</a></p>
                             <hr>
                             <h4>Услуги 3D-печати, 3D-моделирования, 3D-сканирование, обучение, мастер-классы и другие вопросы:</h4>
-                            <p><a href="#">asya.a@3dpgalaxy.ru</a></p>
+                            <p><a href="mailto:asya.a@3dpgalaxy.ru">asya.a@3dpgalaxy.ru</a></p>
                         </div>
                         <div class="col-sm-6">
                             <!-- VK Widget -->
@@ -345,15 +346,15 @@
                         <div class="col-sm-6">
                             <hr>
                             <h4>Продажа 3D-принтеров, 3D-ручек, 3D-сканеров:</h4>
-                            <p><a href="#">sales@3dpgalaxy.ru</a></p>
+                            <p><a href="mailto:sales@3dpgalaxy.ru">sales@3dpgalaxy.ru</a></p>
                             <hr>
                             <h4>Техническая поддержка</h4>
-                            <p><a href="#">support@3dpgalaxy.ru</a></p>
+                            <p><a href="mailto:support@3dpgalaxy.ru">support@3dpgalaxy.ru</a></p>
                         </div>
                         <div class="col-sm-6" style="padding-left: 27px; padding-right: 27px;">
-                            <a href="#" class="btn btn-danger btn-block" style="margin-top: 15px">Youtube</a>
-                            <a href="#" class="btn btn-warning btn-block" style="margin-top: 10px;">Instagram</a>
-                            <a href="#" class="btn btn-primary btn-block" style="margin-top: 10px; background-color: #21427b">Facebook</a>
+                            <a href="https://www.youtube.com/channel/UCYrcg5wA-2Z2tYc2fQzTdNA" class="btn btn-danger btn-block" style="margin-top: 15px">Youtube</a>
+                            <a href="https://www.instagram.com/3dgalaxy.printing/" class="btn btn-warning btn-block" style="margin-top: 10px;">Instagram</a>
+                            <a href="https://www.facebook.com/groups/1798664953735321/" class="btn btn-primary btn-block" style="margin-top: 10px; background-color: #21427b">Facebook</a>
                             <a href="#" class="btn btn-info btn-block" style="margin-top: 10px">Telegram</a>
                         </div>
                     </div>
@@ -374,10 +375,10 @@
                             <p id="address">ул. Марксистская, 34к7, Москва, МИРБИС</p>
                         </div>
                         <div class="col-sm-4 d-flex align-items-center" style="margin-top: 1%; margin-bottom: 1%">
-                            <a href="#" class="btn btn-outline-dark btn-block">Скопировать адрес</a>
+                            <a href="#map" onclick="copyToClipboard('#addressToCopy');" class="btn btn-outline-dark btn-block">Скопировать адрес</a>
                         </div>
                         <div class="col-sm-4 d-flex align-items-center" style="margin-top: 1%; margin-bottom: 1%">
-                            <a href="#" class="btn btn-outline-dark btn-block">Скопировать координаты</a>
+                            <a href="#map" onclick="copyToClipboard('#coordsToCopy');" class="btn btn-outline-dark btn-block">Скопировать координаты</a>
                         </div>
                         <div class="container">
                         </div>
@@ -441,6 +442,19 @@
                     </div>
                 </div>
             </div>
+
+            <p id="addressToCopy" style="display: none">ул. Марксистская, 34к7, Москва</p>
+            <p id="coordsToCopy" style="display: none">55.735736, 37.664188</p>
+
+            <script>
+                function copyToClipboard(element) {
+                    var $temp = $("<input>");
+                    $("body").append($temp);
+                    $temp.val($(element).text()).select();
+                    document.execCommand("copy");
+                    $temp.remove();
+                }
+            </script>
 </body>
 
 </html>
